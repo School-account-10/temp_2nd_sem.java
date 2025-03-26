@@ -12,8 +12,11 @@ import javax.swing.border.Border;
 public class Eventlist extends JFrame {
 
   Eventlist() {
-    JLabel txt = new JLabel("Damn im a txt string");
-    txt.setLayout(new BorderLayout());
+    JLabel txt = new JLabel();
+    txt.setText("Damn im a txt string");
+    ImageIcon placeholder = new ImageIcon("pictures\\placeholderImg.png"); /// change place holder
+    /// txt.setHorizontalTextPosition(JLabel.CENTER);
+    txt.setVerticalTextPosition(JLabel.TOP);
     this.add(txt, BorderLayout.CENTER);
     this.setVisible(true);
     this.setSize(750, 540);
@@ -24,6 +27,8 @@ public class Eventlist extends JFrame {
     ImageIcon progIcon = new ImageIcon("pictures/program_icon.png");
     this.setIconImage(progIcon.getImage());
     this.getContentPane().setBackground(new Color(123, 50, 250));
-    this.add(txt);
+    txt.setIcon(placeholder); /// change this 
+   
+    
   }
 }
