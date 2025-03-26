@@ -15,19 +15,22 @@ public class Eventlist extends JFrame {
   Eventlist() {
     JLabel txt = new JLabel();
     txt.setText("Damn im a txt string");
+    txt.setIconTextGap(40);
+    this.add(txt, BorderLayout.CENTER);
     ImageIcon poster1 = new ImageIcon("pictures\\placeholderImg.png"); /// change place holder
     ImageIcon poster2 = new ImageIcon("pictures\\placeholderImg.png");
     ImageIcon poster3 = new ImageIcon("pictures\\placeholderImg.png"); // might make a scrollable thingi
     txt.setIcon(poster1); /// change this the name i ment 
     /// txt.setHorizontalTextPosition(JLabel.CENTER); //changes pos of txt
     //// txt.setVerticalTextPosition(JLabel.TOP); /// changes pos of txt
+    /// txt.setBackground(Color.black);
+    // txt.setOpaque(true);
     ///txt.setForeground(new Color(15, 88, 125));
     /// txt.setFont(new Font("MV Boli", Font.PLAIN,20 ));
     /// dont mind this part its just the colors and the pos of the txt 
-    txt.setBackground(Color.black);
-    txt.setOpaque(true);
-    txt.setIconTextGap(40);
-    this.add(txt, BorderLayout.CENTER);
+    
+    
+    
     
     this.setVisible(true);
     this.setSize(750, 540);
