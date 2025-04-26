@@ -9,12 +9,21 @@ package concert_ticketing_system;
  * @author Franzoli
  */
 public class Eventlist extends javax.swing.JFrame {
-
+        
+        
     /**
      * Creates new form Eventlist
      */
     public Eventlist() {
         initComponents();
+        settings();
+        
+        
+    }
+    
+    public void settings(){
+        this.setVisible(true);
+        this.toFront();
     }
 
     /**
@@ -26,148 +35,182 @@ public class Eventlist extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        scrollbar1 = new java.awt.Scrollbar();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jPanel1 = new javax.swing.JPanel();
         Event1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         Event2 = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         Event3 = new javax.swing.JPanel();
+        jButton3 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         Event4 = new javax.swing.JPanel();
+        jButton4 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
         Event5 = new javax.swing.JPanel();
+        jButton5 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
         Event6 = new javax.swing.JPanel();
+        jButton6 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Concert_ticket_sys1.0");
         setExtendedState(1);
+        setMinimumSize(new java.awt.Dimension(100, 100));
+        setPreferredSize(new java.awt.Dimension(500, 500));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Event1.setBackground(new java.awt.Color(204, 255, 204));
+        Event1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout Event1Layout = new javax.swing.GroupLayout(Event1);
-        Event1.setLayout(Event1Layout);
-        Event1Layout.setHorizontalGroup(
-            Event1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
-        );
-        Event1Layout.setVerticalGroup(
-            Event1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PICTURES/ALOUtCOMEDY.png"))); // NOI18N
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setIconTextGap(0);
+        Event1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, 420));
+
+        jButton1.setText("View more");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        Event1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, -1, -1));
+
+        jPanel1.add(Event1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 460));
 
         Event2.setBackground(new java.awt.Color(102, 255, 204));
         Event2.setPreferredSize(new java.awt.Dimension(200, 213));
+        Event2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout Event2Layout = new javax.swing.GroupLayout(Event2);
-        Event2.setLayout(Event2Layout);
-        Event2Layout.setHorizontalGroup(
-            Event2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
-        );
-        Event2Layout.setVerticalGroup(
-            Event2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 213, Short.MAX_VALUE)
-        );
+        jButton2.setText("View more");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        Event2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, -1, -1));
+
+        jLabel2.setText("jLabel2");
+        Event2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, -1, -1));
+
+        jPanel1.add(Event2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 10, 219, 460));
 
         Event3.setBackground(new java.awt.Color(102, 255, 102));
         Event3.setPreferredSize(new java.awt.Dimension(200, 213));
+        Event3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout Event3Layout = new javax.swing.GroupLayout(Event3);
-        Event3.setLayout(Event3Layout);
-        Event3Layout.setHorizontalGroup(
-            Event3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
-        );
-        Event3Layout.setVerticalGroup(
-            Event3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 213, Short.MAX_VALUE)
-        );
+        jButton3.setText("View more");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        Event3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, -1, -1));
+
+        jLabel3.setText("jLabel3");
+        Event3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
+
+        jPanel1.add(Event3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, -1, 460));
 
         Event4.setBackground(new java.awt.Color(255, 204, 204));
         Event4.setPreferredSize(new java.awt.Dimension(200, 213));
+        Event4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout Event4Layout = new javax.swing.GroupLayout(Event4);
-        Event4.setLayout(Event4Layout);
-        Event4Layout.setHorizontalGroup(
-            Event4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
-        );
-        Event4Layout.setVerticalGroup(
-            Event4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 213, Short.MAX_VALUE)
-        );
+        jButton4.setText("View more");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        Event4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PICTURES/bkc.png"))); // NOI18N
+        Event4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 380));
+
+        jPanel1.add(Event4, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 20, 300, 450));
 
         Event5.setBackground(new java.awt.Color(204, 204, 255));
         Event5.setPreferredSize(new java.awt.Dimension(200, 213));
+        Event5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout Event5Layout = new javax.swing.GroupLayout(Event5);
-        Event5.setLayout(Event5Layout);
-        Event5Layout.setHorizontalGroup(
-            Event5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
-        );
-        Event5Layout.setVerticalGroup(
-            Event5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 213, Short.MAX_VALUE)
-        );
+        jButton5.setText("jButton5");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        Event5.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, -1, -1));
+
+        jLabel5.setText("jLabel5");
+        Event5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, -1, -1));
+
+        jPanel1.add(Event5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 300, 440));
 
         Event6.setBackground(new java.awt.Color(255, 255, 204));
         Event6.setPreferredSize(new java.awt.Dimension(200, 213));
+        Event6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout Event6Layout = new javax.swing.GroupLayout(Event6);
-        Event6.setLayout(Event6Layout);
-        Event6Layout.setHorizontalGroup(
-            Event6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
-        );
-        Event6Layout.setVerticalGroup(
-            Event6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 213, Short.MAX_VALUE)
-        );
+        jButton6.setText("jButton6");
+        Event6.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(scrollbar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(120, 120, 120)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Event4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Event1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(106, 106, 106)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Event2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Event5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Event6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Event3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(230, 230, 230))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Event3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(Event1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Event2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Event4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Event5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Event6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(17, 17, 17))
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(scrollbar1, javax.swing.GroupLayout.PREFERRED_SIZE, 464, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(32, Short.MAX_VALUE))
-        );
+        jLabel6.setText("jLabel6");
+        Event6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, -1));
 
-        pack();
+        jPanel1.add(Event6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 490, 220, 420));
+
+        jScrollPane2.setViewportView(jPanel1);
+
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1230, 480));
+
+        setBounds(0, 0, 1253, 506);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Viewmore1 VW1 = new Viewmore1();
+        VW1.setVisible(true);
+        
+        this.setVisible(false);
+        this.dispose();
+        
+      // create dispose the window to save resources 
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       Viewmore2 VW2 = new Viewmore2();
+       VW2.setVisible(true);
+       
+       this.setVisible(false);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       Viewmore3 VW3 = new Viewmore3();
+       VW3.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+       Viewmore4 VW4 = new Viewmore4();
+       VW4.setVisible(true);
+      this.setVisible(false);
+        this.dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
+        
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
@@ -189,11 +232,13 @@ public class Eventlist extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Eventlist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Eventlist().setVisible(true);
+                
+                
             }
         });
     }
@@ -205,6 +250,19 @@ public class Eventlist extends javax.swing.JFrame {
     private javax.swing.JPanel Event4;
     private javax.swing.JPanel Event5;
     private javax.swing.JPanel Event6;
-    private java.awt.Scrollbar scrollbar1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
 }

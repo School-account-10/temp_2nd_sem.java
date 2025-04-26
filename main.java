@@ -7,6 +7,7 @@ import javax.swing.JLabel;
 
 public class main{
     public static void main(String[] args) {
-         new Eventlist();// launch eventlist
+        eventlist EVL = new eventlist(); // create an instance of eventlist
+        EVL.evetlist();// launch eventlist
     }
 } 

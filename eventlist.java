@@ -12,9 +12,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
 
-public class Eventlist extends JFrame {
+public class eventlist extends JFrame {
 
-  Eventlist() {
+  void evetlist() {
     //instances of jlabel
     JLabel txt1 = new JLabel();
     JLabel txt2 = new JLabel();
