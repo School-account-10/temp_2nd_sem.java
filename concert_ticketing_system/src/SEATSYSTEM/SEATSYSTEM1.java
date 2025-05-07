@@ -10,22 +10,34 @@ import java.util.HashMap;
  * @author Franzoli
  */
 public class SEATSYSTEM1 extends javax.swing.JFrame {
-
+    
+    
+    //private HashMap<String, String> seatandnumber = new HashMap<String, String>(); 
     /**
      * Creates new form SEATSYSTEM1
      */
     public SEATSYSTEM1() {
         initComponents();
+        //seatdata();
         
         
     }
     
-    public String seatdata(){
-        h
-        return;
-    }
+    //public String seatdata(){
+        
+        
+        //return seatandnumber.toString();
+        
+    //}
+   
     
-    
+     //public void addSeat(String seatNumber, String personName) {
+        //seatandnumber.put(seatNumber, personName);
+    //}
+     
+     //public void RemoveSeat(String seatNumber, String personName) {
+        //seatandnumber.remove(seatNumber);
+    //}
     
     
 
@@ -159,6 +171,7 @@ public class SEATSYSTEM1 extends javax.swing.JFrame {
         jToggleButton35 = new javax.swing.JToggleButton();
         jToggleButton32 = new javax.swing.JToggleButton();
         jToggleButton36 = new javax.swing.JToggleButton();
+        jButton74 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(100, 100));
@@ -172,13 +185,13 @@ public class SEATSYSTEM1 extends javax.swing.JFrame {
 
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton73.setText("<-- Go back ");
+        jButton73.setText("Proceed--->");
         jButton73.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton73ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton73, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+        jPanel6.add(jButton73, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 30, -1, -1));
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -1211,6 +1224,14 @@ public class SEATSYSTEM1 extends javax.swing.JFrame {
 
         jPanel6.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 1290, 240));
 
+        jButton74.setText("<-- Go back ");
+        jButton74.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton74ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton74, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+
         jScrollPane1.setViewportView(jPanel6);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1320, 740));
@@ -1230,24 +1251,47 @@ public class SEATSYSTEM1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton73ActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        // TODO add your handling code here:
+        System.out.println("jToggleButton2 is selected: " + jToggleButton2.isSelected());
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-        boolean seat1sel = true;
+       
+         
         if(jToggleButton2.isSelected()){
+            //addSeat("1a","SEAT1" );
+            
             System.out.println("button seat1 selected");
+            //System.out.println(seatdata());
+            
         }else{
             System.out.println("button seat1 deselected");
+            
+            //RemoveSeat("1a", "SEAT1");
         }
+          System.out.println("Inside jToggleButton3ActionPerformed");
+        System.out.println("jToggleButton2 is selected: " + jToggleButton2.isSelected());
+         // System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
-        // TODO add your handling code here:
+       if(jToggleButton2.isSelected()){
+            //addSeat("1a","SEAT1" );
+            
+            System.out.println("button seat1 selected");
+            //System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat1 deselected");
+            
+            //RemoveSeat("1a", "SEAT1");
+        }
+          System.out.println("Inside jToggleButton3ActionPerformed");
+        System.out.println("jToggleButton2 is selected: " + jToggleButton2.isSelected());
+         // System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton3ActionPerformed
 
     private void jToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton4ActionPerformed
-        // TODO add your handling code here:
+         
     }//GEN-LAST:event_jToggleButton4ActionPerformed
 
     private void jToggleButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton5ActionPerformed
@@ -1666,6 +1710,10 @@ public class SEATSYSTEM1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton108ActionPerformed
 
+    private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton74ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1703,6 +1751,7 @@ public class SEATSYSTEM1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton73;
+    private javax.swing.JButton jButton74;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
