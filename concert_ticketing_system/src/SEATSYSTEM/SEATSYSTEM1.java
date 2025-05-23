@@ -4,6 +4,7 @@
  */
 package SEATSYSTEM; 
 import concert_ticketing_system.Viewmore1;
+import Payment_system.PaymentSystem1FUJI;
 import java.util.HashMap;
 /**
  *
@@ -12,32 +13,32 @@ import java.util.HashMap;
 public class SEATSYSTEM1 extends javax.swing.JFrame {
     
     
-    //private HashMap<String, String> seatandnumber = new HashMap<String, String>(); 
+    private HashMap<String, String> seatandnumber = new HashMap<String, String>(); 
     /**
      * Creates new form SEATSYSTEM1
      */
     public SEATSYSTEM1() {
         initComponents();
-        //seatdata();
+        seatdata();
         
         
     }
     
-    //public String seatdata(){
+    public String seatdata(){
         
         
-        //return seatandnumber.toString();
+        return seatandnumber.toString();
         
-    //}
+    }
    
     
-     //public void addSeat(String seatNumber, String personName) {
-        //seatandnumber.put(seatNumber, personName);
-    //}
+     public void addSeat(String seatNumber, String personName) {
+        seatandnumber.put(seatNumber, personName);
+    }
      
-     //public void RemoveSeat(String seatNumber, String personName) {
-        //seatandnumber.remove(seatNumber);
-    //}
+     public void RemoveSeat(String seatNumber, String personName) {
+        seatandnumber.remove(seatNumber);
+    }
     
     
 
@@ -1241,473 +1242,1854 @@ public class SEATSYSTEM1 extends javax.swing.JFrame {
 
     private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
         // TODO add your handling code here:
-        // back button
+        // proceed
         this.dispose();
         this.setVisible(false);
-       Viewmore1 VW1 = new Viewmore1();
-       VW1.setVisible(true);
+       PaymentSystem1FUJI PM1 = new PaymentSystem1FUJI();
+       PM1.setVisible(true);
+       
       
         
     }//GEN-LAST:event_jButton73ActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        System.out.println("jToggleButton2 is selected: " + jToggleButton2.isSelected());
+        if(jToggleButton1.isSelected()){
+            addSeat("SEAT3","a1" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "a1");
+        }
+          
+        System.out.println("jToggleButton1 is selected: " + jToggleButton1.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
        
          
         if(jToggleButton2.isSelected()){
-            //addSeat("1a","SEAT1" );
+            addSeat("SEAT1","a1" );
             
             System.out.println("button seat1 selected");
-            //System.out.println(seatdata());
+            System.out.println(seatdata());
             
         }else{
             System.out.println("button seat1 deselected");
             
-            //RemoveSeat("1a", "SEAT1");
+            RemoveSeat("SEAT1", "a1");
         }
-          System.out.println("Inside jToggleButton3ActionPerformed");
+          
         System.out.println("jToggleButton2 is selected: " + jToggleButton2.isSelected());
-         // System.out.println("Current seat data: " + seatdata());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
-       if(jToggleButton2.isSelected()){
-            //addSeat("1a","SEAT1" );
+       if(jToggleButton3.isSelected()){
+            addSeat("SEAT2","a1" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "a1");
+        }
+          
+        System.out.println("jToggleButton3 is selected: " + jToggleButton3.isSelected());
+          System.out.println("Current seat data: " + seatdata());
+    }//GEN-LAST:event_jToggleButton3ActionPerformed
+
+    private void jToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton4ActionPerformed
+        if(jToggleButton4.isSelected()){
+            addSeat("SEAT4","a1" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "a1");
+        }
+        
+        System.out.println("jToggleButton4 is selected: " + jToggleButton4.isSelected());
+          System.out.println("Current seat data: " + seatdata());
+    }//GEN-LAST:event_jToggleButton4ActionPerformed
+
+    private void jToggleButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton5ActionPerformed
+        if(jToggleButton5.isSelected()){
+            addSeat("SEAT5","a1" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "a1");
+        }
+          
+        System.out.println("jToggleButton5 is selected: " + jToggleButton5.isSelected());
+          System.out.println("Current seat data: " + seatdata());
+    }//GEN-LAST:event_jToggleButton5ActionPerformed
+
+    private void jToggleButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton6ActionPerformed
+        if(jToggleButton6.isSelected()){
+            addSeat("SEAT6","a1" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "a1");
+        }
+          
+        System.out.println("jToggleButton6 is selected: " + jToggleButton6.isSelected());
+          System.out.println("Current seat data: " + seatdata());
+          //The thrid seat button doesn't work and i think there also a problem in the order of the the seats.
+    }//GEN-LAST:event_jToggleButton6ActionPerformed
+
+    private void jToggleButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton7ActionPerformed
+                                               
+        if(jToggleButton7.isSelected()){
+            addSeat("SEAT7","a1" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "a1");
+        }
+          
+        System.out.println("jToggleButton7 is selected: " + jToggleButton7.isSelected());
+          System.out.println("Current seat data: " + seatdata());
+    }//GEN-LAST:event_jToggleButton7ActionPerformed
+
+    private void jToggleButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton8ActionPerformed
+        if(jToggleButton8.isSelected()){
+            addSeat("SEAT8","a1" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "a1");
+        }
+          
+        System.out.println("jToggleButton8 is selected: " + jToggleButton8.isSelected());
+          System.out.println("Current seat data: " + seatdata());
+    }//GEN-LAST:event_jToggleButton8ActionPerformed
+
+    private void jToggleButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton9ActionPerformed
+        if(jToggleButton9.isSelected()){
+            addSeat("SEAT9","a9" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "a9");
+        }
+          
+        System.out.println("jToggleButton9 is selected: " + jToggleButton9.isSelected());
+          System.out.println("Current seat data: " + seatdata());
+    }//GEN-LAST:event_jToggleButton9ActionPerformed
+
+    private void jToggleButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton10ActionPerformed
+        if(jToggleButton10.isSelected()){
+            addSeat("SEAT1","1b" );
             
             System.out.println("button seat1 selected");
-            //System.out.println(seatdata());
+            System.out.println(seatdata());
             
         }else{
             System.out.println("button seat1 deselected");
             
-            //RemoveSeat("1a", "SEAT1");
+            RemoveSeat("SEAT1", "1b");
         }
-          System.out.println("Inside jToggleButton3ActionPerformed");
-        System.out.println("jToggleButton2 is selected: " + jToggleButton2.isSelected());
-         // System.out.println("Current seat data: " + seatdata());
-    }//GEN-LAST:event_jToggleButton3ActionPerformed
-
-    private void jToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton4ActionPerformed
-         
-    }//GEN-LAST:event_jToggleButton4ActionPerformed
-
-    private void jToggleButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton5ActionPerformed
-
-    private void jToggleButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton6ActionPerformed
-
-    private void jToggleButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton7ActionPerformed
-
-    private void jToggleButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton8ActionPerformed
-
-    private void jToggleButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton9ActionPerformed
-
-    private void jToggleButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton10ActionPerformed
-        // TODO add your handling code here:
+          
+        System.out.println("jToggleButton10 is selected: " + jToggleButton10.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton10ActionPerformed
 
     private void jToggleButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton11ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton11.isSelected()){
+            addSeat("SEAT4","1b" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "1b");
+        }
+          
+        System.out.println("jToggleButton11 is selected: " + jToggleButton11.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton11ActionPerformed
 
     private void jToggleButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton12ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton12.isSelected()){
+            addSeat("SEAT7","1b" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "1b");
+        }
+          
+        System.out.println("jToggleButton12 is selected: " + jToggleButton12.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton12ActionPerformed
 
     private void jToggleButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton13ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton13.isSelected()){
+            addSeat("SEAT8","1b" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "1b");
+        }
+
+        System.out.println("jToggleButton13 is selected: " + jToggleButton13.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton13ActionPerformed
 
     private void jToggleButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton14ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton14.isSelected()){
+            addSeat("SEAT5","1b" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "1b");
+        }
+          
+        System.out.println("jToggleButton14 is selected: " + jToggleButton14.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton14ActionPerformed
 
     private void jToggleButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton15ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton15.isSelected()){
+            addSeat("SEAT2","1b" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "1b");
+        }
+    
+        System.out.println("jToggleButton15 is selected: " + jToggleButton15.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton15ActionPerformed
 
     private void jToggleButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton16ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton16.isSelected()){
+            addSeat("SEAT3","1b" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "1b");
+        }
+          
+        System.out.println("jToggleButton16 is selected: " + jToggleButton16.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton16ActionPerformed
 
     private void jToggleButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton17ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton17.isSelected()){
+            addSeat("SEAT6","1b" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "1b");
+        }
+          
+        System.out.println("jToggleButton17 is selected: " + jToggleButton17.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton17ActionPerformed
 
     private void jToggleButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton18ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton18.isSelected()){
+            addSeat("SEAT9","1b" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "1b");
+        }
+          
+        System.out.println("jToggleButton18 is selected: " + jToggleButton18.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton18ActionPerformed
 
     private void jToggleButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton19ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton19.isSelected()){
+            addSeat("SEAT1","2b" );
+            
+            System.out.println("button seat1 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat1 deselected");
+            
+            RemoveSeat("SEAT1", "2b");
+        }
+          
+        System.out.println("jToggleButton19 is selected: " + jToggleButton19.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton19ActionPerformed
 
     private void jToggleButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton20ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton20.isSelected()){
+            addSeat("SEAT4","2b" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "2b");
+        }
+          
+        System.out.println("jToggleButton20 is selected: " + jToggleButton20.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton20ActionPerformed
 
     private void jToggleButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton21ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton21.isSelected()){
+            addSeat("SEAT7","2b" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "2b");
+        }
+          
+        System.out.println("jToggleButton21 is selected: " + jToggleButton21.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton21ActionPerformed
 
     private void jToggleButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton22ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton22.isSelected()){
+            addSeat("SEAT8","2b" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "2b");
+        }
+          
+        System.out.println("jToggleButton22 is selected: " + jToggleButton22.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton22ActionPerformed
 
     private void jToggleButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton23ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton23.isSelected()){
+            addSeat("SEAT5","2b" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "2b");
+        }
+          
+        System.out.println("jToggleButton23 is selected: " + jToggleButton23.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton23ActionPerformed
 
     private void jToggleButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton24ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton24.isSelected()){
+            addSeat("SEAT2","2b" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "2b");
+        }
+          
+        System.out.println("jToggleButton24 is selected: " + jToggleButton24.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton24ActionPerformed
 
     private void jToggleButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton25ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton25.isSelected()){
+            addSeat("SEAT3","2b" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "2b");
+        }
+         
+        System.out.println("jToggleButton25 is selected: " + jToggleButton25.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton25ActionPerformed
 
     private void jToggleButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton26ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton26.isSelected()){
+            addSeat("SEAT6","2b" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "2b");
+        }
+          
+        System.out.println("jToggleButton26 is selected: " + jToggleButton26.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton26ActionPerformed
 
     private void jToggleButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton27ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton27.isSelected()){
+            addSeat("SEAT9","2b" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "2b");
+        }
+          
+        System.out.println("jToggleButton27 is selected: " + jToggleButton27.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton27ActionPerformed
 
     private void jToggleButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton28ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton28.isSelected()){
+            addSeat("SEAT1","a2" );
+            
+            System.out.println("button seat1 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat1 deselected");
+            
+            RemoveSeat("SEAT1", "a2");
+        }
+          
+        System.out.println("jToggleButton28 is selected: " + jToggleButton28.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton28ActionPerformed
 
     private void jToggleButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton29ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton29.isSelected()){
+            addSeat("SEAT4","a2" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "a2");
+        }
+          
+        System.out.println("jToggleButton29 is selected: " + jToggleButton29.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton29ActionPerformed
 
     private void jToggleButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton30ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton30.isSelected()){
+            addSeat("SEAT7","a2" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "a2");
+        }
+          
+        System.out.println("jToggleButton30 is selected: " + jToggleButton30.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton30ActionPerformed
 
     private void jToggleButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton31ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton31.isSelected()){
+            addSeat("SEAT8","a2" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "a2");
+        }
+          
+        System.out.println("jToggleButton31 is selected: " + jToggleButton31.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton31ActionPerformed
 
     private void jToggleButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton32ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton32.isSelected()){
+            addSeat("SEAT5","a2" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "a2");
+        }
+          
+        System.out.println("jToggleButton32 is selected: " + jToggleButton32.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton32ActionPerformed
 
     private void jToggleButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton33ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton33.isSelected()){
+            addSeat("SEAT2","a2" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "a2");
+        }
+          
+        System.out.println("jToggleButton33 is selected: " + jToggleButton33.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton33ActionPerformed
 
     private void jToggleButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton34ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton34.isSelected()){
+            addSeat("SEAT3","a2" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "a2");
+        }
+          
+        System.out.println("jToggleButton34 is selected: " + jToggleButton34.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton34ActionPerformed
 
     private void jToggleButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton35ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton35.isSelected()){
+            addSeat("SEAT6","a2" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "a2");
+        }
+          
+        System.out.println("jToggleButton35 is selected: " + jToggleButton35.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton35ActionPerformed
 
     private void jToggleButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton36ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton36.isSelected()){
+            addSeat("SEAT9","a2" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "a2");
+        }
+          
+        System.out.println("jToggleButton36 is selected: " + jToggleButton36.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton36ActionPerformed
 
     private void jToggleButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton37ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton37.isSelected()){
+            addSeat("SEAT1","c1" );
+            
+            System.out.println("button seat1 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat1 deselected");
+            
+            RemoveSeat("SEAT1", "c1");
+        }
+          
+        System.out.println("jToggleButton37 is selected: " + jToggleButton37.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton37ActionPerformed
 
     private void jToggleButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton38ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton38.isSelected()){
+            addSeat("SEAT2","c1" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "c1");
+        }
+          
+        System.out.println("jToggleButton38 is selected: " + jToggleButton38.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton38ActionPerformed
 
     private void jToggleButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton39ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton39.isSelected()){
+            addSeat("SEAT3","c1" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "c1");
+        }
+          
+        System.out.println("jToggleButton39 is selected: " + jToggleButton39.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton39ActionPerformed
 
     private void jToggleButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton40ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton40.isSelected()){
+            addSeat("SEAT4","c1" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "c1");
+        }
+          
+        System.out.println("jToggleButton40 is selected: " + jToggleButton40.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton40ActionPerformed
 
     private void jToggleButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton41ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton41.isSelected()){
+            addSeat("SEAT5","c1" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "c1");
+        }
+          
+        System.out.println("jToggleButton41 is selected: " + jToggleButton41.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton41ActionPerformed
 
     private void jToggleButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton42ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton42.isSelected()){
+            addSeat("SEAT6","c1" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "c1");
+        }
+          
+        System.out.println("jToggleButton42 is selected: " + jToggleButton42.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton42ActionPerformed
 
     private void jToggleButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton43ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton43.isSelected()){
+            addSeat("SEAT7","c1" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "c1");
+        }
+          
+        System.out.println("jToggleButton43 is selected: " + jToggleButton43.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton43ActionPerformed
 
     private void jToggleButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton44ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton44.isSelected()){
+            addSeat("SEAT8","c1" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "c1");
+        }
+          
+        System.out.println("jToggleButton44 is selected: " + jToggleButton44.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton44ActionPerformed
 
     private void jToggleButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton45ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton45.isSelected()){
+            addSeat("SEAT9","c1" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "c1");
+        }
+          
+        System.out.println("jToggleButton45 is selected: " + jToggleButton45.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton45ActionPerformed
 
     private void jToggleButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton46ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton46.isSelected()){
+            addSeat("SEAT1","c2" );
+            
+            System.out.println("button seat1 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat1 deselected");
+            
+            RemoveSeat("SEAT1", "c2");
+        }
+        
+        System.out.println("jToggleButton46 is selected: " + jToggleButton46.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton46ActionPerformed
 
     private void jToggleButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton47ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton47.isSelected()){
+            addSeat("SEAT2","c2" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "c2");
+        }
+          
+        System.out.println("jToggleButton47 is selected: " + jToggleButton47.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton47ActionPerformed
 
     private void jToggleButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton48ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton48.isSelected()){
+            addSeat("SEAT3","c2" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "c2");
+        }
+          
+        System.out.println("jToggleButton48 is selected: " + jToggleButton48.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton48ActionPerformed
 
     private void jToggleButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton49ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton49.isSelected()){
+            addSeat("SEAT4","c2" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "c2");
+        }
+        
+        System.out.println("jToggleButton49 is selected: " + jToggleButton49.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton49ActionPerformed
 
     private void jToggleButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton50ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton50.isSelected()){
+            addSeat("SEAT5","c2" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "c2");
+        }
+          
+        System.out.println("jToggleButton50 is selected: " + jToggleButton50.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton50ActionPerformed
 
     private void jToggleButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton51ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton51.isSelected()){
+            addSeat("SEAT6","c2" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "c2");
+        }
+          
+        System.out.println("jToggleButton51 is selected: " + jToggleButton51.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton51ActionPerformed
 
     private void jToggleButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton52ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton52.isSelected()){
+            addSeat("SEAT7","c2" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "c2");
+        }
+          
+        System.out.println("jToggleButton52 is selected: " + jToggleButton52.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton52ActionPerformed
 
     private void jToggleButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton53ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton53.isSelected()){
+            addSeat("SEAT8","c2" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "c2");
+        }
+          
+        System.out.println("jToggleButton53 is selected: " + jToggleButton53.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton53ActionPerformed
 
     private void jToggleButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton54ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton54.isSelected()){
+            addSeat("SEAT9","c2" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "c2");
+        }
+          
+        System.out.println("jToggleButton54 is selected: " + jToggleButton54.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton54ActionPerformed
 
     private void jToggleButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton55ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton55.isSelected()){
+            addSeat("SEAT1","c3" );
+            
+            System.out.println("button seat1 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat1 deselected");
+            
+            RemoveSeat("SEAT1", "c3");
+        }
+          
+        System.out.println("jToggleButton55 is selected: " + jToggleButton55.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton55ActionPerformed
 
     private void jToggleButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton56ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton56.isSelected()){
+            addSeat("SEAT2","c3" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "c3");
+        }
+          
+        System.out.println("jToggleButton56 is selected: " + jToggleButton56.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton56ActionPerformed
 
     private void jToggleButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton57ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton57.isSelected()){
+            addSeat("SEAT3","c3" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "c3");
+        }
+          
+        System.out.println("jToggleButton57 is selected: " + jToggleButton57.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton57ActionPerformed
 
     private void jToggleButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton58ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton58.isSelected()){
+            addSeat("SEAT4","c3" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "c3");
+        }
+          
+        System.out.println("jToggleButton58 is selected: " + jToggleButton58.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton58ActionPerformed
 
     private void jToggleButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton59ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton59.isSelected()){
+            addSeat("SEAT5","c3" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "c3");
+        }
+          
+        System.out.println("jToggleButton59 is selected: " + jToggleButton59.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton59ActionPerformed
 
     private void jToggleButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton60ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton60.isSelected()){
+            addSeat("SEAT6","c3" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "c3");
+        }
+          
+        System.out.println("jToggleButton60 is selected: " + jToggleButton60.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton60ActionPerformed
 
     private void jToggleButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton61ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton61.isSelected()){
+            addSeat("SEAT7","c3" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "c3");
+        }
+          
+        System.out.println("jToggleButton61 is selected: " + jToggleButton61.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton61ActionPerformed
 
     private void jToggleButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton62ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton62.isSelected()){
+            addSeat("SEAT8","c3" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "c3");
+        }
+          
+        System.out.println("jToggleButton62 is selected: " + jToggleButton62.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton62ActionPerformed
 
     private void jToggleButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton63ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton63.isSelected()){
+            addSeat("SEAT9","c3" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "c3");
+        }
+          
+        System.out.println("jToggleButton63 is selected: " + jToggleButton63.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton63ActionPerformed
 
     private void jToggleButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton64ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton64.isSelected()){
+            addSeat("SEAT1","c4" );
+            
+            System.out.println("button seat1 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat1 deselected");
+            
+            RemoveSeat("SEAT1", "c4");
+        }
+          
+        System.out.println("jToggleButton64 is selected: " + jToggleButton64.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton64ActionPerformed
 
     private void jToggleButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton65ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton65.isSelected()){
+            addSeat("SEAT2","c4" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "c4");
+        }
+          
+        System.out.println("jToggleButton65 is selected: " + jToggleButton65.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton65ActionPerformed
 
     private void jToggleButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton66ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton66.isSelected()){
+            addSeat("SEAT3","c4" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "c4");
+        }
+          
+        System.out.println("jToggleButton66 is selected: " + jToggleButton66.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton66ActionPerformed
 
     private void jToggleButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton67ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton67.isSelected()){
+            addSeat("SEAT4","c4" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "c4");
+        }
+          
+        System.out.println("jToggleButton67 is selected: " + jToggleButton67.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton67ActionPerformed
 
     private void jToggleButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton68ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton68.isSelected()){
+            addSeat("SEAT5","c4" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "c4");
+        }
+        
+        System.out.println("jToggleButton68 is selected: " + jToggleButton68.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton68ActionPerformed
 
     private void jToggleButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton69ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton69.isSelected()){
+            addSeat("SEAT6","c4" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "c4");
+        }
+          
+        System.out.println("jToggleButton69 is selected: " + jToggleButton69.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton69ActionPerformed
 
     private void jToggleButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton70ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton70.isSelected()){
+            addSeat("SEAT7","c4" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "c4");
+        }
+        
+        System.out.println("jToggleButton70 is selected: " + jToggleButton70.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton70ActionPerformed
 
     private void jToggleButton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton71ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton71.isSelected()){
+            addSeat("SEAT8","c4" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "c4");
+        }
+          
+        System.out.println("jToggleButton71 is selected: " + jToggleButton71.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton71ActionPerformed
 
     private void jToggleButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton72ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton72.isSelected()){
+            addSeat("SEAT9","c4" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "c4");
+        }
+          
+        System.out.println("jToggleButton72 is selected: " + jToggleButton72.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton72ActionPerformed
 
     private void jToggleButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton73ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton73.isSelected()){
+            addSeat("SEAT1","d2" );
+            
+            System.out.println("button seat1 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat1 deselected");
+            
+            RemoveSeat("SEAT1", "d2");
+        }
+          
+        System.out.println("jToggleButton73 is selected: " + jToggleButton73.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton73ActionPerformed
 
     private void jToggleButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton74ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton74.isSelected()){
+            addSeat("SEAT2","d2" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "d2");
+        }
+          
+        System.out.println("jToggleButton74 is selected: " + jToggleButton74.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton74ActionPerformed
 
     private void jToggleButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton75ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton75.isSelected()){
+            addSeat("SEAT3","d2" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "d2");
+        }
+          
+        System.out.println("jToggleButton75 is selected: " + jToggleButton75.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton75ActionPerformed
 
     private void jToggleButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton76ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton76.isSelected()){
+            addSeat("SEAT6","d2" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "d2");
+        }
+          
+        System.out.println("jToggleButton73 is selected: " + jToggleButton76.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton76ActionPerformed
 
     private void jToggleButton77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton77ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton77.isSelected()){
+            addSeat("SEAT5","d2" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "d2");
+        }
+          
+        System.out.println("jToggleButton77 is selected: " + jToggleButton77.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton77ActionPerformed
 
     private void jToggleButton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton78ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton78.isSelected()){
+            addSeat("SEAT4","d2" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "d2");
+        }
+          
+        System.out.println("jToggleButton78 is selected: " + jToggleButton78.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton78ActionPerformed
 
     private void jToggleButton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton79ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton79.isSelected()){
+            addSeat("SEAT7","d2" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "d2");
+        }
+          
+        System.out.println("jToggleButton73 is selected: " + jToggleButton79.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton79ActionPerformed
 
     private void jToggleButton80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton80ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton80.isSelected()){
+            addSeat("SEAT8","d2" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "d2");
+        }
+          
+        System.out.println("jToggleButton80 is selected: " + jToggleButton80.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton80ActionPerformed
 
     private void jToggleButton81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton81ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton81.isSelected()){
+            addSeat("SEAT9","d2" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "d2");
+        }
+          
+        System.out.println("jToggleButton81 is selected: " + jToggleButton81.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton81ActionPerformed
 
     private void jToggleButton82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton82ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton82.isSelected()){
+            addSeat("SEAT1","d1" );
+            
+            System.out.println("button seat1 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat1 deselected");
+            
+            RemoveSeat("SEAT1", "d1");
+        }
+          
+        System.out.println("jToggleButton82 is selected: " + jToggleButton82.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton82ActionPerformed
 
     private void jToggleButton83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton83ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton83.isSelected()){
+            addSeat("SEAT2","d1" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "d1");
+        }
+          
+        System.out.println("jToggleButton83 is selected: " + jToggleButton83.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton83ActionPerformed
 
     private void jToggleButton84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton84ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton84.isSelected()){
+            addSeat("SEAT3","d1" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "d1");
+        }
+          
+        System.out.println("jToggleButton84 is selected: " + jToggleButton84.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton84ActionPerformed
 
     private void jToggleButton85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton85ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton85.isSelected()){
+            addSeat("SEAT5","d1" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "d1");
+        }
+          
+        System.out.println("jToggleButton85 is selected: " + jToggleButton85.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton85ActionPerformed
 
     private void jToggleButton86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton86ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton86.isSelected()){
+            addSeat("SEAT4","d1" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "d1");
+        }
+          
+        System.out.println("jToggleButton86 is selected: " + jToggleButton86.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton86ActionPerformed
 
     private void jToggleButton87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton87ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton87.isSelected()){
+            addSeat("SEAT7","d1" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "d1");
+        }
+          
+        System.out.println("jToggleButton87 is selected: " + jToggleButton87.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton87ActionPerformed
 
     private void jToggleButton88ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton88ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton88.isSelected()){
+            addSeat("SEAT8","d1" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "d1");
+        }
+          
+        System.out.println("jToggleButton88 is selected: " + jToggleButton88.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton88ActionPerformed
 
     private void jToggleButton89ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton89ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton89.isSelected()){
+            addSeat("SEAT9","d1" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "d1");
+        }
+          
+        System.out.println("jToggleButton89 is selected: " + jToggleButton89.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton89ActionPerformed
 
     private void jToggleButton90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton90ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton90.isSelected()){
+            addSeat("SEAT6","d1" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "d1");
+        }
+          
+        System.out.println("jToggleButton90 is selected: " + jToggleButton90.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton90ActionPerformed
 
     private void jToggleButton91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton91ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton91.isSelected()){
+            addSeat("SEAT1","d3" );
+            
+            System.out.println("button seat1 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat1 deselected");
+            
+            RemoveSeat("SEAT1", "d3");
+        }
+          
+        System.out.println("jToggleButton91 is selected: " + jToggleButton91.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton91ActionPerformed
 
     private void jToggleButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton92ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton92.isSelected()){
+            addSeat("SEAT4","d3" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "d3");
+        }
+          
+        System.out.println("jToggleButton92 is selected: " + jToggleButton92.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton92ActionPerformed
 
     private void jToggleButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton93ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton93.isSelected()){
+            addSeat("SEAT7","d3" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "d3");
+        }
+        
+        System.out.println("jToggleButton93 is selected: " + jToggleButton93.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton93ActionPerformed
 
     private void jToggleButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton94ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton94.isSelected()){
+            addSeat("SEAT8","d3" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "d3");
+        }
+        
+        System.out.println("jToggleButton94 is selected: " + jToggleButton94.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton94ActionPerformed
 
     private void jToggleButton95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton95ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton95.isSelected()){
+            addSeat("SEAT5","d3" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "d3");
+        }
+          
+        System.out.println("jToggleButton95 is selected: " + jToggleButton95.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton95ActionPerformed
 
     private void jToggleButton96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton96ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton96.isSelected()){
+            addSeat("SEAT2","d3" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "d3");
+        }
+          
+        System.out.println("jToggleButton92 is selected: " + jToggleButton96.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton96ActionPerformed
 
     private void jToggleButton97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton97ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton97.isSelected()){
+            addSeat("SEAT3","d3" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "d3");
+        }
+          
+        System.out.println("jToggleButton97 is selected: " + jToggleButton97.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton97ActionPerformed
 
     private void jToggleButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton98ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton98.isSelected()){
+            addSeat("SEAT6","d3" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "d3");
+        }
+          
+        System.out.println("jToggleButton98 is selected: " + jToggleButton98.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton98ActionPerformed
 
     private void jToggleButton99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton99ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton99.isSelected()){
+            addSeat("SEAT9","d3" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "d3");
+        }
+          
+        System.out.println("jToggleButton99 is selected: " + jToggleButton99.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton99ActionPerformed
 
     private void jToggleButton100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton100ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton100.isSelected()){
+            addSeat("SEAT7","d4" );
+            
+            System.out.println("button seat7 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat7 deselected");
+            
+            RemoveSeat("SEAT7", "d4");
+        }
+          
+        System.out.println("jToggleButton100 is selected: " + jToggleButton100.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton100ActionPerformed
 
     private void jToggleButton101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton101ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton101.isSelected()){
+            addSeat("SEAT8","d4" );
+            
+            System.out.println("button seat8 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat8 deselected");
+            
+            RemoveSeat("SEAT8", "d4");
+        }
+          
+        System.out.println("jToggleButton101 is selected: " + jToggleButton101.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton101ActionPerformed
 
     private void jToggleButton102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton102ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton102.isSelected()){
+            addSeat("SEAT9","d4" );
+            
+            System.out.println("button seat9 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat9 deselected");
+            
+            RemoveSeat("SEAT9", "d4");
+        }
+          
+        System.out.println("jToggleButton102 is selected: " + jToggleButton102.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton102ActionPerformed
 
     private void jToggleButton103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton103ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton103.isSelected()){
+            addSeat("SEAT6","d4" );
+            
+            System.out.println("button seat6 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat6 deselected");
+            
+            RemoveSeat("SEAT6", "d4");
+        }
+          
+        System.out.println("jToggleButton103 is selected: " + jToggleButton103.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton103ActionPerformed
 
     private void jToggleButton104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton104ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton104.isSelected()){
+            addSeat("SEAT5","d4" );
+            
+            System.out.println("button seat5 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat5 deselected");
+            
+            RemoveSeat("SEAT5", "d4");
+        }
+          
+        System.out.println("jToggleButton104 is selected: " + jToggleButton104.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton104ActionPerformed
 
     private void jToggleButton105ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton105ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton105.isSelected()){
+            addSeat("SEAT4","d4" );
+            
+            System.out.println("button seat4 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat4 deselected");
+            
+            RemoveSeat("SEAT4", "d4");
+        }
+          
+        System.out.println("jToggleButton105 is selected: " + jToggleButton105.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton105ActionPerformed
 
     private void jToggleButton106ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton106ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton106.isSelected()){
+            addSeat("SEAT1","d4" );
+            
+            System.out.println("button seat1 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat1 deselected");
+            
+            RemoveSeat("SEAT1", "d4");
+        }
+          
+        System.out.println("jToggleButton106 is selected: " + jToggleButton106.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton106ActionPerformed
 
     private void jToggleButton107ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton107ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton107.isSelected()){
+            addSeat("SEAT2","d4" );
+            
+            System.out.println("button seat2 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat2 deselected");
+            
+            RemoveSeat("SEAT2", "d4");
+        }
+          
+        System.out.println("jToggleButton107 is selected: " + jToggleButton107.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton107ActionPerformed
 
     private void jToggleButton108ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton108ActionPerformed
-        // TODO add your handling code here:
+        if(jToggleButton108.isSelected()){
+            addSeat("SEAT3","d4" );
+            
+            System.out.println("button seat3 selected");
+            System.out.println(seatdata());
+            
+        }else{
+            System.out.println("button seat3 deselected");
+            
+            RemoveSeat("SEAT3", "d4");
+        }
+          
+        System.out.println("jToggleButton108 is selected: " + jToggleButton108.isSelected());
+          System.out.println("Current seat data: " + seatdata());
     }//GEN-LAST:event_jToggleButton108ActionPerformed
 
     private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
