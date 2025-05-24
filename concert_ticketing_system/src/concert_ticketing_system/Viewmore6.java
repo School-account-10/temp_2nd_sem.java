@@ -4,6 +4,8 @@
  */
 package concert_ticketing_system;
 
+import SEATSYSTEM.SEATSYSTEM6;
+
 /**
  *
  * @author Franzoli
@@ -54,6 +56,8 @@ public class Viewmore6 extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -137,12 +141,45 @@ public class Viewmore6 extends javax.swing.JFrame {
         jLabel32.setText("passion, inspiration, and a call to action. This is more than a ");
         jPanel2.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 850, 370, -1));
 
+        jButton2.setText("<--- Back ");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
+
+        jButton1.setText("Proceed--->");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 60, -1, -1));
+
         jScrollPane1.setViewportView(jPanel2);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 680));
 
         setBounds(0, 0, 782, 833);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        System.out.println("back was pressed");
+        Eventlist EVL1 = new Eventlist();
+        this.dispose();
+        this.setVisible(false);
+        EVL1.setAlwaysOnTop(true);
+        EVL1.setVisible(true);
+        EVL1.toFront();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.dispose();
+        this.setVisible(false);
+        SEATSYSTEM6 STS6 = new SEATSYSTEM6();
+        STS6.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -180,6 +217,8 @@ public class Viewmore6 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
