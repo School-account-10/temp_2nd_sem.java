@@ -13,7 +13,7 @@ import java.awt.*;
  *
  * @author Franzoli
  */
-public class ReceiptSystem1fuji extends javax.swing.JFrame {
+public class ReceiptSystem2 extends javax.swing.JFrame {
 
 
 
@@ -47,7 +47,7 @@ public class GUIPrinter {
      * 
      * Creates new form ReceiptSystem1
      */
-    public ReceiptSystem1fuji() {
+    public ReceiptSystem2() {
         initComponents();
     }
 
@@ -158,21 +158,23 @@ public class GUIPrinter {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ReceiptSystem1fuji.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ReceiptSystem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ReceiptSystem1fuji.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ReceiptSystem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ReceiptSystem1fuji.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ReceiptSystem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ReceiptSystem1fuji.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ReceiptSystem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ReceiptSystem1fuji().setVisible(true);
+                new ReceiptSystem2().setVisible(true);
             }
         });
     }
