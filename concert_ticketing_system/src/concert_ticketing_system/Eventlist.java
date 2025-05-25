@@ -80,7 +80,7 @@ public class Eventlist extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        Event1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, -1, -1));
+        Event1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 420, -1, -1));
 
         jPanel1.add(Event1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 460));
 
@@ -94,12 +94,12 @@ public class Eventlist extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        Event2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, -1, -1));
+        Event2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, -1, -1));
 
         jLabel2.setText("jLabel2");
-        Event2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, -1, -1));
+        Event2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, -1, -1));
 
-        jPanel1.add(Event2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 10, 219, 460));
+        jPanel1.add(Event2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 10, 320, 460));
 
         Event3.setBackground(new java.awt.Color(102, 255, 102));
         Event3.setPreferredSize(new java.awt.Dimension(200, 213));
@@ -111,12 +111,13 @@ public class Eventlist extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        Event3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, -1, -1));
+        Event3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 420, -1, -1));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PICTURES/C.LUNE.png"))); // NOI18N
         jLabel3.setText("jLabel3");
-        Event3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
+        Event3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jPanel1.add(Event3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, -1, 460));
+        jPanel1.add(Event3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 10, 300, 460));
 
         Event4.setBackground(new java.awt.Color(255, 204, 204));
         Event4.setPreferredSize(new java.awt.Dimension(200, 213));
@@ -128,12 +129,12 @@ public class Eventlist extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        Event4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, -1, -1));
+        Event4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PICTURES/bkc.png"))); // NOI18N
-        Event4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 380));
+        Event4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, -1, 450));
 
-        jPanel1.add(Event4, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 20, 300, 450));
+        jPanel1.add(Event4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 10, 300, 460));
 
         Event5.setBackground(new java.awt.Color(204, 204, 255));
         Event5.setPreferredSize(new java.awt.Dimension(200, 213));
@@ -150,7 +151,7 @@ public class Eventlist extends javax.swing.JFrame {
         jLabel5.setText("jLabel5");
         Event5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, -1, -1));
 
-        jPanel1.add(Event5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 300, 440));
+        jPanel1.add(Event5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 300, 430));
 
         Event6.setBackground(new java.awt.Color(255, 255, 204));
         Event6.setPreferredSize(new java.awt.Dimension(200, 213));
@@ -162,13 +163,13 @@ public class Eventlist extends javax.swing.JFrame {
         jLabel6.setText("jLabel6");
         Event6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, -1));
 
-        jPanel1.add(Event6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 490, 220, 420));
+        jPanel1.add(Event6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 490, 320, 420));
 
         jScrollPane2.setViewportView(jPanel1);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1230, 480));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, -40, 1380, 710));
 
-        setBounds(0, 0, 1253, 506);
+        setBounds(0, 0, 1506, 738);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
