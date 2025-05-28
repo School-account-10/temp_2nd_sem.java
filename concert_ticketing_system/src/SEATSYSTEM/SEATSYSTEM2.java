@@ -3,8 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package SEATSYSTEM; 
-import concert_ticketing_system.Viewmore1;
-import Payment_system.PaymentSystem1FUJI;
+import concert_ticketing_system.Viewmore2;
+import Payment_system.PaymentSystem2;
 import java.util.HashMap;
 /**
  *
@@ -1244,8 +1244,8 @@ public class SEATSYSTEM2 extends javax.swing.JFrame {
         // proceed
         this.dispose();
         this.setVisible(false);
-       PaymentSystem1FUJI PM1 = new PaymentSystem1FUJI();
-       PM1.setVisible(true);
+       PaymentSystem2 PM2 = new PaymentSystem2();
+       PM2.setVisible(true);
        
       
         
@@ -3092,7 +3092,10 @@ public class SEATSYSTEM2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jToggleButton108ActionPerformed
 
     private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
+      this.setVisible(false);
+      Viewmore2 vw2 = new Viewmore2();
+      vw2.setVisible(true);
     }//GEN-LAST:event_jButton74ActionPerformed
 
     /**

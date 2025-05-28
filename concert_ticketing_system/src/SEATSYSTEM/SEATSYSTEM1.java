@@ -3093,7 +3093,10 @@ public class SEATSYSTEM1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jToggleButton108ActionPerformed
 
     private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
-        // TODO add your handling code here:
+      this.dispose();
+      this.setVisible(false);
+      Viewmore1 vw1 = new Viewmore1();
+      vw1.setVisible(true);
     }//GEN-LAST:event_jButton74ActionPerformed
 
     /**

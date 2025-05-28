@@ -140,16 +140,16 @@ public class Eventlist extends javax.swing.JFrame {
         Event5.setPreferredSize(new java.awt.Dimension(200, 213));
         Event5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton5.setText("jButton5");
+        jButton5.setText("View more");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        Event5.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, -1, -1));
+        Event5.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, -1, -1));
 
         jLabel5.setText("jLabel5");
-        Event5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, -1, -1));
+        Event5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, -1, -1));
 
         jPanel1.add(Event5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 300, 430));
 
@@ -157,19 +157,24 @@ public class Eventlist extends javax.swing.JFrame {
         Event6.setPreferredSize(new java.awt.Dimension(200, 213));
         Event6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton6.setText("jButton6");
-        Event6.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, -1, -1));
+        jButton6.setText("View more");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        Event6.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, -1, -1));
 
         jLabel6.setText("jLabel6");
-        Event6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, -1));
+        Event6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, -1));
 
         jPanel1.add(Event6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 490, 320, 420));
 
         jScrollPane2.setViewportView(jPanel1);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, -40, 1380, 710));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1380, 970));
 
-        setBounds(0, 0, 1506, 738);
+        setBounds(0, 0, 1506, 993);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -179,7 +184,7 @@ public class Eventlist extends javax.swing.JFrame {
         this.setVisible(false);
         this.dispose();
         
-      // create dispose the window to save resources 
+   
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -193,6 +198,8 @@ public class Eventlist extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
        Viewmore3 VW3 = new Viewmore3();
        VW3.setVisible(true);
+       this.setVisible(false);
+       this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -203,8 +210,20 @@ public class Eventlist extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+ Viewmore5 VW5 = new Viewmore5();
+        VW5.setVisible(true);
+        
+        this.setVisible(false);
+        this.dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+ Viewmore6 VW6 = new Viewmore6();
+        VW6.setVisible(true);
+        
+        this.setVisible(false);
+        this.dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments

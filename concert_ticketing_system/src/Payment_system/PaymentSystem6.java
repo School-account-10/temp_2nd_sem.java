@@ -93,7 +93,7 @@ public class PaymentSystem6 extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 110, 440, 460));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel5.setText("Payment for \"Al Out Comedy\" (Al Fuji)");
+        jLabel5.setText("Payment for RISE AND SPEAK with Marvin Brondial");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 530, 60));
 
         setBounds(0, 0, 1278, 807);
