@@ -83,7 +83,7 @@ public class Viewmore5 extends javax.swing.JFrame {
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 49, -1, -1));
 
         jLabel9.setText("trio Tres Harmonia with Kyle, the main vocalist and lead ");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 540, 370, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 540, 370, 20));
 
         jLabel10.setText("Brace yourself for an electrifying two-night as rising pop-rock ");
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, 450, 20));
