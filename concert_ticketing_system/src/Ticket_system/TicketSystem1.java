@@ -22,7 +22,7 @@ public class TicketSystem1 extends javax.swing.JFrame {
 public class randomgenaph {
     public static void gen(JLabel jLabel10) {
         Random r1 = new Random();
-        int r2 = r1.nextInt(301) + 400; 
+        int r2 = r1.nextInt(4000) + 3200; 
         jLabel10.setText(Integer.toString(r2));
     }
 }
@@ -150,7 +150,8 @@ public class GUIPrinter {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
- System.out.println("Proceed to ticket");
+  this.dispose();
+  this.setVisible(false);
  
     }//GEN-LAST:event_jButton1ActionPerformed
 
