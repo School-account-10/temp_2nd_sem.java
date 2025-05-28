@@ -97,7 +97,7 @@ public class Eventlist extends javax.swing.JFrame {
         Event2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, -1, -1));
 
         jLabel2.setText("jLabel2");
-        Event2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, -1, -1));
+        Event2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, -1, -1));
 
         jPanel1.add(Event2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 10, 320, 460));
 
