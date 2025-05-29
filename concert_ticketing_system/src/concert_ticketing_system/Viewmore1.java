@@ -154,7 +154,7 @@ public class Viewmore1 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 90, -1, -1));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 90, -1, -1));
 
         jButton2.setText("<---Back");
         jButton2.addActionListener(new java.awt.event.ActionListener() {

@@ -172,7 +172,7 @@ public class Eventlist extends javax.swing.JFrame {
 
         jScrollPane2.setViewportView(jPanel1);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1380, 970));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1380, 850));
 
         setBounds(0, 0, 1506, 993);
     }// </editor-fold>//GEN-END:initComponents
