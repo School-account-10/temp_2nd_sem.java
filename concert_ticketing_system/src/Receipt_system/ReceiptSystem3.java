@@ -7,6 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.awt.print.*;
 import Ticket_system.TicketSystem1;
+import Ticket_system.TicketSystem3;
 import java.awt.*;
 
 /**
@@ -100,17 +101,17 @@ public class GUIPrinter {
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel5.setText("Cost of Item");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, 130, 20));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 130, 20));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel6.setText("Item#");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 130, 20));
 
-        jLabel9.setText("Alloutcomedy#1");
+        jLabel9.setText("C.Lune: \"Himig ng Gabi\" ");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
         jLabel8.setText("10 php");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 420, 510));
 
@@ -131,6 +132,10 @@ public class GUIPrinter {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
  System.out.println("Proceed to ticket");
+        TicketSystem3 tks3 = new TicketSystem3(); 
+        tks3.setVisible(true);
+        this.dispose();
+        this.setVisible(false);
  
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -7,7 +7,7 @@ import javax.swing.Timer;
 import java.awt.event.ActionEvent; 
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
-import Receipt_system.ReceiptSystem1fuji;
+import Receipt_system.ReceiptSystem4;
 import javax.swing.SwingUtilities;
         
 
@@ -108,8 +108,8 @@ public class PaymentSystem4 extends javax.swing.JFrame {
       Timer timer = new Timer(6000, new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 System.out.println("hello");   
-                ReceiptSystem1fuji RS1 = new ReceiptSystem1fuji();
-                RS1.setVisible(true);
+                ReceiptSystem4 RS4 = new ReceiptSystem4();
+                RS4.setVisible(true);
                  SwingUtilities.invokeLater(new Runnable() {
                 public void run() {
                     dispose(); 
@@ -123,8 +123,8 @@ public class PaymentSystem4 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         System.out.println("Cash");
-        ReceiptSystem1fuji RS1 = new ReceiptSystem1fuji();
-        RS1.setVisible(true);
+        ReceiptSystem4 RS4 = new ReceiptSystem4();
+        RS4.setVisible(true);
         this.dispose();
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed

@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import Receipt_system.ReceiptSystem1fuji;
+import Receipt_system.ReceiptSystem2;
 import javax.swing.SwingUtilities;
         
 
@@ -123,8 +124,8 @@ public class PaymentSystem2 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         System.out.println("Cash");
-        ReceiptSystem1fuji RS1 = new ReceiptSystem1fuji();
-        RS1.setVisible(true);
+        ReceiptSystem2 RS2 = new ReceiptSystem2();
+        RS2.setVisible(true);
         this.dispose();
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed

@@ -2,18 +2,30 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Receipt_system;
+package Ticket_system;
+import Receipt_system.*;
+import javax.swing.JLabel;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.awt.print.*;
-import Ticket_system.TicketSystem4;
+import Ticket_system.TicketSystem2;
 import java.awt.*;
+import java.util.Random;
+
 
 /**
  *
  * @author Franzoli
  */
-public class ReceiptSystem4 extends javax.swing.JFrame {
+public class TicketSystem2 extends javax.swing.JFrame {
+
+public class randomgenaph {
+    public static void gen(JLabel jLabel10) {
+        Random r1 = new Random();
+        int r2 = r1.nextInt(4000) + 3200; 
+        jLabel10.setText(Integer.toString(r2));
+    }
+}
 
 
 
@@ -47,8 +59,10 @@ public class GUIPrinter {
      * 
      * Creates new form ReceiptSystem1
      */
-    public ReceiptSystem4() {
+    public TicketSystem2() {
         initComponents();
+        randomgenaph.gen(jLabel10);
+        
     }
 
     /**
@@ -69,6 +83,8 @@ public class GUIPrinter {
         jLabel6 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
@@ -82,7 +98,7 @@ public class GUIPrinter {
         jLabel2.setText("***************************************************************************************");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 420, 43));
 
-        jButton2.setText("Print Receipt ");
+        jButton2.setText("Print Ticket");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -100,21 +116,25 @@ public class GUIPrinter {
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel5.setText("Cost of Item");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 130, 20));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, 130, 20));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel6.setText("Item#");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 130, 20));
 
-        jLabel9.setText("\"The Breaking Chika\" with Stephen Tan!");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, 40));
+        jLabel9.setText("Maevee: \"Starlit Melodies Manila Tour\"");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
         jLabel8.setText("10 php");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 60, 20));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, -1, -1));
+
+        jLabel7.setText("ID:");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 280, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 420, 510));
 
-        jButton1.setText("Proceed to ticket ---->");
+        jButton1.setText("exit ---->");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -123,18 +143,15 @@ public class GUIPrinter {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 30, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setText("Receipt System ");
+        jLabel1.setText("Show Ticket System");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
- System.out.println("Proceed to ticket");
-  TicketSystem4 tks4 = new TicketSystem4(); 
-        tks4.setVisible(true);
-        this.dispose();
-        this.setVisible(false);
+  this.dispose();
+  this.setVisible(false);
  
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -162,13 +179,13 @@ public class GUIPrinter {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ReceiptSystem4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketSystem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ReceiptSystem4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketSystem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ReceiptSystem4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketSystem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ReceiptSystem4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TicketSystem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -182,7 +199,8 @@ public class GUIPrinter {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ReceiptSystem4().setVisible(true);
+                new TicketSystem2().setVisible(true);
+                
             }
         });
     }
@@ -191,11 +209,13 @@ public class GUIPrinter {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
