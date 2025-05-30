@@ -110,7 +110,7 @@ public class GUIPrinter {
         jLabel9.setText("C.Lune: \"Himig ng Gabi\" ");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
-        jLabel8.setText("10 php");
+        jLabel8.setText("php 2,000");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 420, 510));

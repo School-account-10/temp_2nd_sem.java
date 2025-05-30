@@ -125,7 +125,7 @@ public class GUIPrinter {
         jLabel9.setText("RISE AND SPEAK with Marvin Brondial");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
-        jLabel8.setText("10 php");
+        jLabel8.setText("php 1,700");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, -1, -1));
 
         jLabel7.setText("ID:");

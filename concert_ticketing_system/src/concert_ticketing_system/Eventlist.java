@@ -146,7 +146,7 @@ public class Eventlist extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        Event5.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, -1, -1));
+        Event5.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, -1, -1));
 
         jLabel5.setText("jLabel5");
         Event5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, -1, -1));
@@ -163,7 +163,7 @@ public class Eventlist extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        Event6.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, -1, -1));
+        Event6.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 340, -1, -1));
 
         jLabel6.setText("jLabel6");
         Event6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, -1));
@@ -172,7 +172,7 @@ public class Eventlist extends javax.swing.JFrame {
 
         jScrollPane2.setViewportView(jPanel1);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1380, 850));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1380, 810));
 
         setBounds(0, 0, 1506, 993);
     }// </editor-fold>//GEN-END:initComponents

@@ -125,8 +125,8 @@ public class GUIPrinter {
         jLabel9.setText("\"The Breaking Chika\" with Stephen Tan!");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
-        jLabel8.setText("10 php");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, -1, -1));
+        jLabel8.setText("php 1,500");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, -1, -1));
 
         jLabel7.setText("ID:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 280, -1));
