@@ -72,7 +72,7 @@ public class Viewmore4 extends javax.swing.JFrame {
         jLabel6.setText("GENERIC ADM: ₱1,500");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 880, 200, -1));
 
-        jLabel23.setText("\"The Breaking Chika\" with Stephen Tan!");
+        jLabel23.setText("\"The Breaking ...Chika\" with York Stephen Tan!");
         jLabel23.setBorder(javax.swing.BorderFactory.createCompoundBorder(null, javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
         jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 600, 40));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 49, -1, -1));
@@ -113,7 +113,7 @@ public class Viewmore4 extends javax.swing.JFrame {
         jLabel19.setText("So, Don't miss out on the latest Chika–it's all happening on ");
         jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 780, 530, -1));
 
-        jLabel27.setText("Location: SM Mall of Asia Arena");
+        jLabel27.setText("Location: New Frontier Theater, Quezon City");
         jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 840, 600, 20));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PICTURES/bkc.png"))); // NOI18N

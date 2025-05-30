@@ -114,7 +114,7 @@ public class Viewmore6 extends javax.swing.JFrame {
         jLabel19.setText("Whether you come for the message or the man behind the mic, ");
         jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 810, 530, -1));
 
-        jLabel27.setText("Location: New Frontier Theater, Question City");
+        jLabel27.setText("Location: New Frontier Theater, Quezon City");
         jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 970, 600, 20));
 
         jLabel28.setText("specifically for this intimate show.");
